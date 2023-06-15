@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 1. INFO PARA EL NAVEGADOR -->
+    <!-- 1.a Meta Tags Requeridas-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="nombre del autor">
+    <meta name="description" content="poner el contenido de la pagina">
+    <meta name="keywords" content="palabras claves de la pagina">
+
+    <!-- 1.b Nombre Página & Favicon-->
+    <!-- <link rel="shortcut icon" type"image/png" href="assets/img/favicon.png.png"> -->
+    <title>OLIVIA ROSS</title>
+
+    <!-- 1.c Conexión a Tipografía GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- 1.d Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- 1.e Mi CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- 2. TRABAJO POR SECCIONES -->
+        
+    <!-- /* 2.a SECCIÓN:  NAVBAR*/ -->
+    <nav class="navbar navbar-expand-lg pb-2 color-gris sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand barra-nav" href="#"><img class="w-75" src="assets/img/logo.png" alt="logo Olivia Ros"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto align-content-end fs-4 fw-normal me-sm-5">
+                        <a class="nav-link" href="#">Acerca de mí</a>
+                        <a class="nav-link" href="#">Trabajos</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    
+        <!-- /* 2.b SECCIÓN:  HEADER HERO*/ -->
+        
+        <header id="hero-section" class="text-white p-3 p-sm-5 pt-5 pt-lg-2">
+            <div  class="container p-lg-5">
+                <div class="ms-auto col-12 col-lg-7 text-end me-lg-5" >
+                    <h1 class="display-1 fw-bolder col-lg-12 mb-3 mb-sm-3 mt-5 mb-4 mb-lg-5">Comidas del fin del mundo</h1>
+                    <p class="mb-sm-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis..</p>
+                    <div class="mb-5 pb-5 mt-5">
+                        <button type="button" class="btn btn-outline-info text-white px-3 me-3">Trabajos</button>
+                        <button type="button" class="btn btn-info text-white px-3">Contacto</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- /* 2.c SECCIÓN:  ACERCA DE MI */ -->
+
+    <div class="titulo2 mb-3 p-2 mt-4 mt-lg-4">
+        <div class="row justify-content-center">
+            <h2 class="fw-bolder text-center mt-4 mt-lg-5 fs-1">Acerca de mí</h2>
+            <p class="col-11 text-center mt-lg-3 mb-lg-1 d-flex fw-medium d-flex d-sm-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus</p>  
+            <p class="col-11 col-lg-9 text-center mt-lg-3 mb-lg-1 d-flex fw-medium d-flex d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+        </div>
+    </div>
+    <div class = "mb-lg-4 mt-lg-5">
+        <div class = "row d-flex justify-content-center">
+            <div class="text-center col-10 col-lg-3">
+                <i class="fa-solid fa-camera fa-3x"></i>
+                <h5 class="fw-bold mt-4">Fotografa de comida</h5>
+                <p class = "mt-4 mb-5 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+            </div>
+            <div class="text-center col-10 col-lg-3">
+                <i class="fa-solid fa-bullhorn fa-3x"></i>
+                <h5 class="fw-bold mt-4">Critica Culinaria</h5>
+                <p class = "mt-4 mb-5 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+            </div>
+            <div class="text-center col-10 col-lg-3 mb-5 pb-3">
+                <i class="fa-regular fa-map fa-3x"></i>
+                <h5 class="fw-bold mt-4">Bloggera de viajes</h5>
+                <p class = "mt-4 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* 2.d SECCIÓN:  MIS TRABAJOS */ -->
+
+    <div class="row row-cols-1 mis-trabajos text-white justify-content-center g-4 pe-lg-4 ps-lg-5 pb-lg-5 pb-5">
+        <h2 class="titulo3 fs-1 fw-bold text-center pt-4 mt-5 pt-5 pt-lg-5 mt-lg-5 pb-4">Mis trabajos</h2>
+        <div class="col-10 col-lg-4 d-block">
+            <div class="card mb-4 mb-lg-0">
+                <img src="./assets/img/card-1.jpg" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-2 fs-4 pt-2">Asado de la Patagonia</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id
+                        purus blandit dapibus.</p>
+                    <a href="#" class="btn ver-mas btn-outline-info pe-4 ps-4 pt-2 pb-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-4 d-block">
+            <div class="card mb-4 mb-lg-0">
+                <img src="./assets/img/card-2.jpg" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-2 fs-4 pt-2">Papas del fin del mundo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id
+                        purus blandit dapibus.</p>
+                    <a href="#" class="btn ver-mas btn-outline-info pe-4 ps-4 pt-2 pb-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 col-lg-4 d-block">
+            <div class="card mb-5 mb-lg-2">
+                <img src="./assets/img/card-3.jpg" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder pb-2 fs-4 pt-2">Salmones de Alaska</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id
+                        purus blandit dapibus.</p>
+                    <a href="#" class="btn ver-mas btn-outline-info pe-4 ps-4 pt-2 pb-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* 2.e SECCIÓN:  SECTION CONTACTAME */ -->
+
+    <div class="titulo2 mb-4 p-2 mt-5 mt-lg-4">
+        <div class="row justify-content-center">
+            <h2 class="fw-bolder text-center mt-2 mt-lg-4 fs-1">Contáctame</h2>
+            <p class="col-9 text-center mt-2 mt-lg-3 mb-lg-1 d-flex d-none d-lg-block fw-medium">Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus
+                porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+        </div>
+    </div>
+    <section class="container col-11 col-lg-9 mb-5 mb-lg-5">
+        <div class="row">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label ps-1 fw-bold">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label ps-1 fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label ps-1 fw-bold">Mensaje</label>
+                <textarea class="form-control text-secondary mb-2" id="exampleFormControlTextarea1"
+                    rows="4">Escribe aquí tu mensaje</textarea>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-4 mt-lg-1 pb-4 pb-lg-0">
+            <button type="submit" class="btn btn-enviar p-2 pe-4 ps-4 fs-6 mb-2 mb-lg-0">Enviar</button>
+        </div>
+    </section>
+
+    <!-- /* 2.f SECCIÓN:  SECTION FOOTER */ -->
+    <footer class="align-content-between">
+        <div class="pie-pagina p-2 p-lg-3">
+            <p class=" derechos-reservados text-center text-white fw-light m-2 fs-6">Olivia Ros 2019. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <!-- 3. SCRIPTS UTILIZADOS "Siempre al Final" */ -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2dbf2bcf5a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

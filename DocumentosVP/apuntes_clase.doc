@@ -1,0 +1,649 @@
+I.HTML
+
+    I.I Tips Importantes:
+
+        1. ¿Cómo se comenta?:  <!-- ASI SE COMENTA! -->
+        2. Paginas Importantes:
+            a. https://www.w3schools.com/html/ (Aprendizaje)
+            b. https://www.lenguajehtml.com (Aprendizaje)
+            c. https://www.htmlreference.io (Aprendizaje)
+            d. https://www.codeacademy.com (Aprendizaje)
+            e. https://www.theodinproject.com (Aprendizaje)
+
+    I.II Definición:
+    
+        HyperText Markup Language: Lenguaje Marcador Hipertexto
+
+    I.III. Glosario:
+
+        A. Pagina Web: 
+            1. Documento que puede ser visto por un Navegador
+            2. Construidas en lenguaje de etiquetas --> HTML
+            3. Contenido: Información:
+                a. Texto
+                b. Imagenes
+                c. Videos
+            4. Formato: 
+                a. Colores
+                b. Tamaño
+                c. Tipo de Letra
+
+        B. Sitio Web:
+
+            1. Colección de Páginas Web
+
+    I.IV Estructura:
+        A Organización de Archivos en Visual Studio Code:
+
+            1. Carpeta "nombre archivo"
+            2. Crear index.html (siempre la página inicial con este nombre)
+            3. Crear CARPETA "assets"
+            4. Dentro "assets" Crear CARPETAS:
+                a.img 
+                b.css
+                    b.1.Crear ARCHIVO style.css
+                c.js
+
+        B. Archivo .html --> Ejemplo index.html
+            1.<!DOCTYPE html> --> Indica que es HTML
+
+            2.<html lang="en">
+
+            3.<head></head> --> Información para el Navegador
+                a. <title> Titulo </title>           --> Agrega el Nombre a la lengueta de la pagina}
+                    Ej: <title>Meet & Coffee</title>
+
+                b. <meta charset="utf-8">            --> Indica los tipos de carácteres, sostiene los del idioma español, tildes, ñ, etc.
+                    Ej: <meta charset="UTF-8">
+
+                c. <link rel="shortcut icon">        --> Agrega el FAVICON
+                    Ej: <link rel="icon" type"image/png" href="./assets/img/favicon.png"/>
+                    
+                d. <style> o <link rel="stylesheet"> --> Linkea a Hoja de estilos .css
+                    Ej: <link rel="stylesheet" href="assets/css/style.css">
+
+                e. <script>                          --> Los Scripts
+
+            4.<body></body> --> Información para el Usuario (Lo que se ve)
+
+                    a. Estructura de las Etiquetas:
+
+                        1. Apertura de Etiqueta <p class="rojo">
+                        2. Contenido Informacion del Contenido
+                        3. Cierre Etiquetas </p> Cierre de Etiqueta
+
+                    b. Ejemplos Etiquetas:    
+                        b.1 Parrafo:  <p></p> 
+
+                        b.2 Headers:  <h1></h1> hasta el nivel <h6></h6>
+
+                        b.3 Imagenes: <img src="" alt=""> --> No tiene cierre
+                            a.3.1 src --> archivo de origen / ruta
+                            a.3.2 alt --> texto alternativo 
+                            Ej: <img src="assets/img/coffee-cup.svg" alt="taza de café blanca con logo grano de café negro"/>
+
+                        b.4 Listas
+                            a.4.1 <ul></ul>: Lista con puntito
+                            a.4.2 <ol></ol>: Lista con numeración
+                            a.4.3 <li></li>: Elemento de una Lista
+
+                            Ejercicio: ¿Como hacer un MENÚ?
+
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="pagina1.html">Pagina 1</a></li>
+                                <li><a href="pagina2.html">Pagina 2</a></li>
+                                <li><a href="pagina3.html">Pagina 3</a></li>                
+                            </ul>
+
+                        b.5 Links
+                            a.5.1 Link a Sitio: <a href=link>Texto a mostrar</a>
+                            Ej: <a href="https://www.w3schools.com/">Haga Click Aquí</a>                   --> En la misma página
+                            Ej: <a href="https://www.w3schools.com/" target="_blanck">Haga Click Aquí</a>  --> En una nueva página
+
+                            a.5.2 Link a la Página Principal del Sitio
+                            Ej: <a href="index.html">Haga Click Aquí</a> 
+
+                            a.5.3 Link a un sitio con una imagen de un sitio en una nueva página
+                            Ej: <a href="https://www.google.com/" target="_blanck"><img src=http://as01.epimg.net/betech/imagenes/2018/10/29/portada/1540844638_585946_1540848919_noticia_normal.jpg alt="Google"></a>
+                            
+                            a.5.4 Link a un sitio con una imagen y texto de un sitio en una nueva página
+                            Ej: <a href="https://www.google.com/" target="_blanck"><img src=http://as01.epimg.net/betech/imagenes/2018/10/29/portada/1540844638_585946_1540848919_noticia_normal.jpg alt="Google">HOLI</a>
+                        
+                            a.5.5 Link a un sitio con una imagen desde la carpeta assets/
+                            Ej: <a href="https://www.paginaconexión,com"><img src="assets/img/coffee-cup.svg" alt=""/></a>
+
+                        b.6 Div: <div></div> --> Dividen el contenido pero NO tienen Semantica
+
+                        b.7 Atributos: A las etiquetas se le pueden agregar atributos
+                            class="Atributo"
+                            id=""
+                            type=""
+                            alt=""
+                            src=""
+
+                        b.8 Etiquetas Interesantes de Internet:
+
+                            a. <progress></progress>: avance de una tarea.
+                                Ej: <progress value="25" max= "100"></progress>
+
+                            b. <details></details> --> Despliega a summary
+                                Ej: <details>
+                                        <summary>
+                                        ¿Que es un unicornio?
+                                        </summary>
+                                        <p>Ser mitologico</p>
+                                        <p>Tipo de Caballo</p>
+                                    </details>
+
+                    c. Orientación Semántica:
+                        c.1 <header></header> --> etiqueta simil de seccion, pero es más especifica como encabezado Principal
+                            -Pregunta: Es un bloque de Navegación?  No
+                            -Pregunta: Hace sentido por si misma?   No
+                            -Pregunta: Es requerido para entender el contenido global? Si
+                            -Pregunta: Lo puedes mover al Apendice? No
+                            -Pregunta: Es logico agregarlo un titulo? Si
+                            -Pregunta: Tiene H1 en esta sección? Si
+
+                                Ej: <header>
+                                        <h1>Descubre lo último en tecnología bebiendo café</h1>
+                                        <h3>Charlas, eventos y simposios sobre tecnología</h2>
+                                    </header>
+
+                        c.2 <nav></nav> --> etiqueta para contener secciones que tienen Links
+                            -Pregunta: Es un bloque de Navegación?  Si
+
+                        c.3 <article></article> --> etiqueta para contener articulos, blogs, foros, post, comentarios con un titulo.
+                            -Pregunta: Es un bloque de Navegación?  No
+                            -Pregunta: Hace sentido por si misma?   Si
+
+                        c.4 <figure></figure> --> etiqueta para contener 1 o más imagenes graficas
+                            -Pregunta: Es un bloque de Navegación?  No
+                            -Pregunta: Hace sentido por si misma?   No
+                            -Pregunta: Es requerido para entender el contenido global? Si
+                            -Pregunta: Lo puedes mover al Apendice? Si
+
+                        c.5 <section></section> --> etiqueta para contener un sección o capitulo de un articulo con titulo
+                            -Pregunta: Es un bloque de Navegación?  No
+                            -Pregunta: Hace sentido por si misma?   No. necesita Informacion adicional.
+                            -Pregunta: Es requerido para entender el contenido global? Si
+                            -Pregunta: Lo puedes mover al Apendice? No
+                            -Pregunta: Es logico agregarlo un titulo? Si
+
+                                Ej: <section>
+                                        <img src="assets/img/we-work.jpg" alt="We work location">
+                                        <h2>¿Donde nos juntamos?</h2>
+                                        <p>Todos los martes y viernes, de 19:00 a 22:00 en We Work, Calle Baker 133, Providencia, Santiago.</p>
+                                    </section>
+
+                        c.6 <aside></aside> --> etiqueta para contener sidebar, comentarios, secciones, glosarios, publicidad, etc.
+                            -Pregunta: Es un bloque de Navegación?  No
+                            -Pregunta: Hace sentido por si misma?   No
+                            -Pregunta: Es requerido para entender el contenido global? No
+                        
+                        c.7 <footer></footer> --> etiqueta para contener pie de pagina para el elemento principal
+
+                                Ej: <footer>
+                                        <p>Meet & coffee 2018. Todos los derechos reservados.</p> 
+                                    </footer>
+
+                        c.8 <elementosuelto></elementosuelto> --> p adress blackquote pre...
+                            -Pregunta: Tiene alguna semantica?  Si
+
+                        c.9 <div></div> --> NO TIENE SEMANTICA adicional como para ganchos con css
+
+II. CSS
+
+    II.I Tips Importantes: 
+        1. ¿Cómo se comenta?:  /* ASI SE COMENTA */
+        2. Antes de EMPEZAR INICIAR PROPIEDADES en style.css:
+            body * {
+                margin: 0;
+                border: 0;
+                padding: 0;
+            }
+        3. Páginas Utiles:
+            https://www.w3schools.com/css/default.asp (Para estudiar)
+            https://www.cssreference.io (Aprendizaje)
+            https://www.khroma.co/generator (Pagina Colores que se unen 50 Seleccionar)
+            https://www.uigradients.com (pagina para fondos degradados) 
+
+    II.II Definición: 
+        1. Cascading Style Sheets --> Hoja de Estilo en Cascáda
+            a. Apariencia del Contenido:
+                a.1 Contenido
+                a.2 Colores
+                a.3 Fuentes
+                a.4 Tipografía
+                a.5 Muchas más.
+
+            Nota: HTML entrega la Estructura / CSS entrega la Apariencia
+
+    II.III Glosario:
+        1. 
+
+    II.IV Estructura:
+        
+        1. Primer Paso: 
+            a. Crear Archivo en Carpeta assets/css/style.css
+            b. Añadir etiqueta "style" en HTML
+                Ej: <link rel="stylesheet" href="assets/css/style.css">
+
+        2. Sintaxis:
+            Selector de etiqueta {
+                        Propiedad1: valor1;
+            }
+            Selector de etiqueta {
+                        Propiedad1: valor1;
+                        Propiedad2: valor2;
+                        Propiedadz: valorz;
+            }            
+                Ej: body {
+                        background: red;
+                    }
+
+        3. Tipo de Selectores:
+            a. Selector por Etiqueta:   Selecciona el elemento por el nombre de la etiqueta.
+
+            b. Selector por Clase: UNO O VARIOS ELEMENTOS --> Selecciona todos los elementos con el mismo valor del atributo de clase.
+                Ej: En Archivo HTML
+                        <h1>Hola Mundo</h1> --> modificar por: <h1 class="verde">Hola Mundo</h1>
+                    
+                    En Archivo CSS
+                        .verde {
+                            color: green;
+                        }
+
+            c. Selector por Id:  ELEMENTO UNICO --> Como valor de atributo es el id de una etiqueta de html.
+                Ej: En Archivo HTML
+                        <h1>Hola Mundo</h1> --> modificar por: <h1 id="titulo">Hola Mundo</h1>
+                    
+                    En Archivo CSS
+                        #titulo {
+                            color: green;
+                        }
+
+        4. Cascada CSS
+
+            a. Reglas Básicas
+                a.1 Regla 1: La última regla manda
+                    Ej: body {
+                            background: red;
+                            otros valor: x;
+                            otros valor: x;
+                            otros valor: x;
+                            background: black; --> este tiene prioridad por sobre el rojo
+                    }
+
+                a.2 Regla 2: Lo especifico manda por sobre lo general
+                    Ej: div {
+                            color: red;
+                        }
+
+                        div h2 {
+                            color: black;
+                        }
+            
+            b. Jerarquía
+                b.1 Etiqueta:   p {
+                                    color: red;
+                                }
+
+                b.2 Selector por clase: .text-red {
+                                            color; red
+                                        }
+
+                b.3 Selector por id: #titulo {
+                                        color; red
+                                     }
+
+                b.4 Estilo en Linea HTML: <h1 style="color:red">Desafio Latam</h1> --> no recomedado para tener una limpieza de código
+
+                b.5 Sentencia !important --> le da predominancia --> no usar para arreglar desorden
+
+                b.6. Ejemplo: Ejercicio Guiado Viva Chile
+
+                    En Archivo HTML
+                        Origen:     <div>
+                                        <h5>Chi Chi Chi</h5>
+                                        <h4>Le Le Le</h4>
+                                        <h3>¡Viva Chile!</h3>
+                                    </div>
+
+                        Modificar:  <div id="wrapper">
+                                        <h5 class="text-blue">Chi Chi Chi</h5>
+                                        <h4>class="text-red">Le Le Le</h4>
+                                        <h3>class="text-white">¡Viva Chile!</h3>
+                                    </div>
+                  
+                    En Archivo CSS
+                                    #wrapper {
+                                        background: darkgray;
+                                    }
+
+                                    .text-blue {
+                                        color: blue;
+                                    }
+
+                                    .text-red {
+                                        color: red;
+                                    }
+                                    
+                                    .text-white {
+                                        color: white;
+                                    }                                    
+
+        5. Color
+
+            a. -hexadecimal    p { color: #FF0000}             /*rojo*/
+            b. -numérico       p { color: rgb (255, 0, 0); }   /*rojo*/
+            c. -porcentual     p { color: rgb (100%, 0, 0); }  /*rojo*/
+
+        6. Texto: 
+
+            a. Tipografía: "font-family"
+                a.1 Nombre Familia Tipografica
+                        Ej: p { font-family: Montserrat,Times New Roman,fantasy; }
+
+                a.2 Nombre Genérico de la Familia Tipografica *Nombre Fuente
+
+            b. Tamaño: "font-size"
+                b.1 em:     Escalable. Elemento padre Tamaño Fuente, Salto de Línea, Margen de Párrafo. (Uso para pantalla celulares disminuye)
+                b.2 rem:    No escalable, Fija
+                b.3 pixel:
+                b.4 pt:
+            
+            c. Grosor de la Fuente: "font-weight" --> Que tan negrita queremos la fuente / cursiva o no.
+
+                Ejemplos con la fuente:
+                        p { 
+                            font-size: 1em; 
+                            font-weight: 300; 
+                            font-style: italic; 
+                        }
+
+            d. Alineación del Texto: "text-align" 
+                Ej: p { text-align: center; } --> Otros: left, right, center, justify
+
+            e. Otros Estilos para Fuentes:
+                line-height: 50px; (alto de la linea que ocupa el texto)
+                text-decoration: underline / none (si trae)
+                                
+        7. Fondo:
+
+            a. background-color: color de fondo
+                Ej: body {
+                       background-color: #fff000;
+                    }
+
+            b. background-image: imagen de fondo
+                Ej: body {
+                        background-image: url("imagen.jpg");
+                    }
+
+            c. background-position: posicion del elemento en relacion al fondo
+                Ej: body {
+                        background-position: center; /*se posicionará al centro*/
+                    }
+
+            d. background-repeat: no cubrir todo el fondo
+                Ej: body {
+                        background-repeat: no-repeat; /*no se repetirá*/
+                    }
+
+            e. background-size: define el tamaño de la imagen que se utilizará como fondo en el elemento aplicado.
+                Ej: body {
+                        background-size: cover; /*La imagen se auto ajustará al espacio disponible*/
+                    }
+            
+            https://www.w3schools.com/css/css_background.asp
+
+            f. Ejercicio: HEADER MEET & COFFEE 
+
+                En Archivo CSS
+
+                    header {
+                        background-image: url(../img/bg-hero.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                         /* Propiedades Agregadas */
+                        font-family: Open sans;
+                        text-shadow: 0px 3px 6px black;
+                        text-align: right;
+                        color: white;
+                    }
+
+                    header h1{
+                        font-size: 60px;
+                    }
+
+                    header h3{
+                        font-size: 40px;
+                        font-weight: lighter;
+                    }
+
+        8. Modelo de Cajas: ¿Cuánto mide cada elemento? (Elementos desde dentro hacia afuera)
+            a. Area de Contenido: Es donde va lo que nosotros estamos llenando (Para editarla left top widht right top height)
+            
+            b. Padding: espacio alrededor del contenido, dentro del borde del elemento. Siempre es transparente
+                Ej: padding: 20px;
+            
+            c. Border: es lo que contiene y está alrededor del contenido y el padding
+                Ej: border-width: 5px;
+                    border-style: dashed;
+                    border-color: blue;
+
+            d. Margin: es espacio alrededor de los elementos, fuera de los bordes definidos. Siempre es transparente
+                Ej:margin: 50px;
+
+        9. Propiedad DISPLAY
+            a. Elementos Block:
+                -div
+                -h1-h6
+                -p
+                -form
+                -header
+                -footer
+                -section
+                
+            b. Elementos Inline:
+                -span
+                -a 
+                -en
+                -strong
+
+            c. Elementos Inline-block
+                -No agrega un salto de linea al elemento    
+                -permite establecer widht height del elemento
+
+        10. Unidades de Medida:
+            a. widht: ancho
+            b. height: alto
+            c. Tipos de Unidades:
+                
+                c.1 Absolutas: Valores exactos, concretos y medibles
+                    -pixel
+                    -milimetros
+                    -centimetros
+                    -pulgadas
+                    -puntos
+
+                c.2 Relativas: Valores no son exactos, variable, se calculan en base a otro valor
+                    -porcentaje (%)
+                    -viewport vw 
+                    -viewport height vh
+                    -rem: tamaño de fuente del navegador
+                    -em: tamaño de fuente del documento
+
+            d. Ejercicio PROXIMA CHARLA (Explica puntos 8 - 9 - 10)
+
+                En Archivo HTML
+
+                <section id="Proxima-Charla">
+                    <div class="wrapper">
+                        <img src="assets/img/speaker.jpg" />
+                        <div class="texto">
+                            <h3>Próxima charla</h3>
+                            <h4>Big Data para Noobs</h4>
+                            <h6>Big Data para Noobs</h6>
+                            <span>
+                            Data Scientist, PhD Theoretical Physics, Carneige Mellon University.
+                            </span>
+                            <p>
+                            En esta charla revisaremos las técnicas y tecnologías que hacen
+                            que sea económico hacer frente a los datos a una escala extrema.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                En Archivo CSS
+
+                    #Proxima-Charla {
+                            background: #a4452c;
+                            padding: 100px;
+                            color: white;
+                    }
+                    #Proxima-Charla .wrapper {
+                            width: 800px;
+                            margin: auto;
+                    }
+                    
+                    .wrapper img {
+                            width: 25%;
+                    }
+                    
+                    .wrapper .texto {
+                            width: 70%;
+                            margin-left: 4%;
+                    }
+
+                    .wrapper img, .texto {
+                            display: inline-block;
+                            vertical-align: middle;
+                    }
+
+        11. Tipografias
+            CSS Web Safe Fonts
+            a. Fuentes / Recursos de Fonts:
+                a.1 Google Fonts
+                    -Paso a Paso: 
+                        1. Ir a google fonts: https://fonts.google.com/
+                        2. Seleccionar Tipografía
+                        3. Descargar Familia
+                        4. Copiar Link
+                        5. Agregar en el Head del HTML
+                            <link rel="preconnect" href="https://fonts.googleapis.com">
+                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+                        6. Agregar en el CSS
+                            Ej: font-family: 'Open Sans', sans-serif;
+
+            b. Posición
+                Ej: <position=
+                b.1 static --> Los elementos son estáticos por defecto. no se posiciona de ninguna manera en especial.
+                b.2 relative
+                b.3 fixed
+                b.4 absolute
+                b.5 sticky
+
+                Eje Z: <z-index> como se apilan los elementos
+
+            c.SVG --> Lenguaje basado en xml para describir imagenes vectoriales.
+                Ejemplo: Tasa de Café
+
+            d.Font Awesome --> Buscar Iconos
+                http://www.fontawesome.com 
+                Copiar el SCRIPT al final
+                Luego agregar los link que está en la pagina: <i class="fa-brands fa-square-github fa-5x"></i>
+
+III.VISUAL STUDIO CODE 
+
+    1. Extensiones
+        a. Emmet: para autocompletar más rápido
+        b. Live Server: para visualizar la pagina que vamos contruyendo
+        c. Live Share: para compartir codigo y participar al mismo tiempo
+        d. Prettier: para formatear codigo
+        e. Code Snippets: small snippets of reusable code (bueno para react)
+        f. auto close: cierra tags automatico
+        g. github copilot: al pair programmer
+
+    2. Atajos con el Teclado:
+        a. CTRL + K + C: Comentar selección
+        b. table>tr*5>td*5 : Crear tabla de 5 col 5 filas
+
+IV. BOOTSTRAP
+
+    1.Definición:
+        a. Ayuda a construir una interfaz web responsiva usando componentes de la biblioteca BOOTSTRAP para solucionar problemas
+        b. ¿Qué es un Framework? R: Conjunto de conceptos, practicas, criterios para solventar problemáticas.
+        C. Maquetar páginas de forma gratuita y sencilla
+
+            1.1 Tipos de Frameworks: 
+                a. BOOTSTRAP --> Libreria de CSS
+                b, foundation
+                c. bulma
+                d. semantic ui
+                e. uikit
+                f. tailwind
+                e. otros...
+    
+    2.Características:
+        a. Código Abierto
+        b. Facil de integración --> Link: CDN (content delivery network - red de entrega de contenido)
+        c. Sistema de Grillas
+        d. Muchas listas de componentes
+        e. Gran documentación
+
+    3.¿Cómo Integrar Bootstrap?
+        a. Documentación: https://getbootstrap.com/
+
+        b. Tipos de Integraciones:
+            b.1 Integración en Archivo HTML
+                b.1.1 Agregar en HEAD:
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        
+                b.1.2 Agregar en ultima parte del Body (Scripts)
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+            b.2 Cargar nuestro propio archivo de css:
+                En el head a continuación del link de Bootstrap: <link rel='stylesheet' htmlref="assets/css/style.css>
+
+            b.3 Javascript:
+                d.1 popperjs: Libreria de Javascript que permite agregar tooltips y popovers
+                d.2 bootstrapjs: Es el código Javascript necesario para el correcto funcionamiento de los componentes de bootstrap
+    
+            b.1 Integración por descarga PENDIENTE DE AGREGAR VER PPT
+
+    4. Sistema de Grillas:
+
+        a. ¿Como funciona?
+            a.1 Divide la pantalla en 12 columnas (Eso se llama Grilla)
+            a.2 diagrama la pagina con contenedores 1 y 12 columnas de ancho
+            a.3 se le asigna un numero de columnas definidas
+            Código: <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="ruta_imagen.extension" alt="Texto alternativo" class="img-fluid">
+                    </div>
+
+            a.4 Tipos de Codigos:
+                col-N se refiere a dispositivos extra small (< 576px).
+                col-sm-N se refiere a dispositivos small (≥ 576px).
+                col-md-N se refiere a dispositivos medium (≥ 768px).
+                col-lg-N se refiere a dispositivos large (≥ 992px).
+                col-xl-N se refiere a dispositivos extra large (≥ 1200px).
+                col-xxl-N se refiere a dispositivos extra extra large (≥ 1400px).
+
+                Nota: En N se debe agregar el Número de Columna
+
+    5. Mobile First:
+        
+        a. Idea:
+            a.1 Filosofía de Desarrollo
+            a.2 Diseñar la visualizacion y estructura del sitio en dispositivos mobiles.
+            a.3 Luego se va escalando a pantallas de mayor tamaño.
+
+---> DESAFIO OLIVIA ROSS
